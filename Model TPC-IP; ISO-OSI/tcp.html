@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+      <meta charset="utf-8">
+      <meta name="Autor" content ="Agnieszka Ciempka">
+      <meta name ="keywords" content="model, ISO, OSI">
+      <meta name="description" content ="Opis modelu ISO/OSI">
+      <meta name="robots" content="Model ISO/OSI">
+      <title> Model TCP/IP </title>
+</head>
+<body>
+<p><h1><b>Model TPC/IP</b></h1></p>
+<p><b><h2>Wprowadzenie</h2></p>
+<p>Model TCP/IP <i>(ang. Transmission Control Protocol/Internet Protocol)</i></b>-teoretyczny model warstwowej struktury protokołów komunikacyjnych. Model TCP/IP został stworzony w latach 70. XX wieku w DARPA, aby pomóc w tworzeniu odpornych na atak sieci komputerowych. Potem stał sie podstawą struktury Internetu.</p>
+<p>Podstawowym założeniem modelu TPC/IP jest podział całego zagadnienia komunikacji sieciowej na szereg współpracujących ze sobą warstw (ang. layers). Każda z nich może być tworzona przez programistów zupełnie niezależnie, jeżeli narzucimy pewne protokoły według których wymieniają się one informacjami. Założenia modelu TPC/IP są pod względem organizacji warst zbliżone do modelu OSI. Jednak liczba warst jest mniejsza i bardziej odzwierciedla prawdziwą strukturę Internetu. Model TPC/IP składa się z czterech warstw.</p>
+<p><small>Dla internetu sformułowano uproszczony Model TCP/IP, który <mark> tylko 4 warstwy.</mark></small></p>
+<hr>
+<p><h2><b>Warstwa aplikacji</b></h2></p>
+<p>Warstwa procesowa czy warstwa aplikacji (ang. process layer) to najwyższy poziom, w którym pracują użyteczne dla człowieka aplikacje takie jak np. serwer WWW czy przeglądarka internetowa. Obejmuje ona zestaw gotowych protokołów, które aplikacje wykorzystują do przesyłania różnego typu informacji w sieci. Wykorzystywane protokoły to m.in.:HTTP, Telnet, FTP, TFTP, SNMP,X Window.</P>
+<hr>
+<p><h2><b>Warstwa transportowa</b></h2></p>
+<p>Warstwa transportowa (ang.host-to-host layer) gwarantuje pewność przesyłania danych oraz kieruje właściwe informacje do odpowiednich aplikacji. Opiera sie na wykorzystaniu portów określonych dla każdego połączenia. W jednym komputerze może istnieć wiele aplikacji wymieniających dane z tym samym komputerem w sieci i nie nastąpi wymieszanie się przesylanych przez nie danych. To właściwie ta warstwa nawiązuje i zrywa połączenia między komputerami i zapewnia pewność transmisji.</p>
+<hr>
+<p><h2><b>Warstwa Internetu</b></h2></p>
+<p>Warstwa internetu lub warstwa protokołu internetowego (ang.internet protocol layer) to sedno działania Internetu. W tej warstwie przetwarzane są datagramy posiadające adresy IP. Ustalana jest odpowiednia droga do docelowego komputera w sieci. Niektóre urządzenia sieciowe posiadają te warstwę jako najwyższą. Są to routery, które zajmują się kierowaniem ruchu w Internecie, bo znają topologię sieci. Proces odnajdywania przez routery właściwej drogi określa się jako trasowanie.</p>
+<p><hr></p>
+<hr>
+<p><h2><b>Warstwa dostępu do sieci</b></h2></P>
+<p>Warstwa dostępu do sieci lub farstwa fizyczna (ang.network access layer) jest najniższą warstwą i to ona zajmuje si e przekazywaniem danych przez fizyczne połączenia miedzy urządzeniami sieciowymi. Najczęściej są to karty sieciowe lub modemy. Dodatkowo warstwa ta jest czasami wyposażona w protokoły do dynamicznego określenia adresów IP.</p>
+<hr>
+<p><h2><b>Implementacja</b></h2></p>
+<p>W dzisiejszych czasach, praktycznie każdy system operacyjny posiada domyślnie zainstalowane protokoły TCP/IP.<br>
+Istnieje także Lightweight TCP/IP, szerzej znany jako darmowy stos TCP/IP dla systemów wbudowanych, czyli będących integralną częścią obsługiwanego przez nie sprzętu-jest to stos protokołów dla systemów obsługujących zarówno amatorskie jak i zaawansowane urządzenia, często budowane z wykorzystaniem programowalnych układów FPGA (np. sprzętowe serwery WWW,FTP). Istnieją także proste stosy TCP/IP realizowane całkowicie sprzętowo.</p>
+<hr>
+<p><b>Schemat</b></p>
+<img src="modelTCP_IP.jpg">
+<br>
+<br>
+<hr>
+<p><b>Przejdź do strony</b>
+<a href="tcp.html" target="_blank">Model TCP/IP</a>
+|
+<a href="index.html" target="_blank">Model ISO/OSI</a>
+</body>
+</html>
